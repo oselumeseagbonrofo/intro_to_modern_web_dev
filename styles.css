@@ -1,0 +1,9 @@
+.color p {
+     background-color: orangered;
+}
+div {
+    background-color: pink;
+}
+div div {
+    background-color: greenyellow;
+}

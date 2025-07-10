@@ -1,112 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <title>Oselumese Agbonrofo's Resume</title>
-    <style>
-        body{
-            margin: 0;
-            padding: 0;
-        }
-        .footer{
-            text-align: center;
-            background-color: blanchedalmond;
-            width: 100%;
-            margin: 0;
-            padding: 2px;
-        }
-        table{
-            width: 100%;
-            border: solid 1px black;
-        }
-        dt{
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        section{
-            padding: 10px;
-            margin: 10px;
-            border: solid 1px black;
-        }
-        article{
-            padding: 10px;
-            margin: 10px;
-        }
-        img{
-            border-radius: 50%;
-            display: block;         
-            margin-left: auto;
-            margin-right: auto;
-        }
-    </style>
-</head>
-<body>
-    <header class="header"><h1>Oselumese Agbonrofo's Resume</h1></header>
-    <nav>
-        <ul>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#interests">Interests</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <title>title</title>
+    <link rel="stylesheet" href="responsive3.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Oselumese Agbonrofo's Resume</h1>
+    </header>
+    <main class="main">
+      <aside class="col">
+        <ul class="col">
+          <li><a class="link" href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-    </nav>
-    <article>
-        <img alt="Oselumese Agbonrofo's Image" src="profileImg.jpeg">
-        <p>Welcome to my Resume</p>
-        <hr>
-        <p>I am Oselumese Agbonrofo, a Data Scientist</p>
-    </article>
-    <section class="experience" id="experience">
-       <table>
-        <colgroup span="1" style="background-color: blanchedalmond;"></colgroup>
-        <tr>
-            <th>Company</th>
-            <th>Job Role</th>
-            <th>Years</th>
-        </tr>
-        <tr>
-            <td>Lagos Business School</td>
-            <td>Research Intern</td>
-            <td>Jul 2023 - Sep 2023</td>
-        </tr>
-       </table>
-    </section>
-    <section class="education" id="education">
-       <h2>Education</h2>
-        <dl>
-        <dt>University</dt>
-        <dd>Pan-Atlantic University</dd>
-        <dt>Degree</dt>
-        <dd>BSc. Information Science and Media Studies</dd>
-       </dl>
-    </section>
-    <section class="interests" id="interests">
-        <h2>Interests</h2>
-        <ul>
-            <li>Data Science</li>
-            <li>African History</li>
-            <li>Programming</li>
-        </ul>
-    </section>
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript
-                <ul>
-                    <li>DOM</li>
-                    <li>NodeJS</li>
-                    <li>Google App Scripts</li>
-                </ul>
-            </li>
-        </ol>    
-    </section>
-    <section class="contact" id="contact">
-       <h2>Contact me</h2>
-       <p>You can reach out to me at my <a href="mailto:oselumeseagbonrofo@gmail.com">email</a></p>
-    </section>
-    <footer class="footer">&copy; Copyright Oselumese Agbonrofo 2025</footer>
-</body>
+      </aside>
+        <article class="color col left">
+          <h2 class="blue">Welcome to my Resume</h2>
+          <hr />
+          <p>I am Oselumese Agbonrofo, a Data Scientist</p>
+          <hr />
+          <h1>Another H1</h1>
+          <h4 class="design">H4 that is not a direct child of div</h4>
+          <p>Tetst <span class="smaller">Laboriosam </span> Tests</p>
+          <span>This should work</span> Tests <span>Playss</span>
+          <h4 class="design">amet consectetur adipisicing elit.</h4>
+          <p class="teal">
+            <span class="smaller">Laboriosam consectetur</span> deleniti quis
+            tempore eum a
+            <img src="profileImg.jpeg" />
+            m odio natus rem, atque officiis cupiditate quo rerum eaque vitae
+            optio? Aperiam odio libero explicabo laudantium aliquam, quo
+            recusandae temporibus. Doloribus rerum culpa, perferendis facilis
+            veritatis non! play Lorem, ipsum dolor sit
+          </p>
+          <h4 class="design">H4 that is not a direct child of div</h4>
+          <div>sing</div>
+        </article>
+        <article class="col">
+          <div class="color">
+            <h4 class="design">amet consectetur adipisicing elit.</h4>
+            <img src="techie.jpg" />
+            <span class="teal"> play Lorem, ipsum dolor sit </span> deleniti
+            quis tempore <span class="smaller">Laboriosam consectetur</span> eum
+            a m odio natus rem, atque officiis cupiditate quo rerum eaque vitae
+            
+            <div>sing</div>
+          </div>
+        </article>
+    </main>
+    <footer class="footer">
+      <p>
+        &copy; Copyright Oselumese Agbonrofo 2025 <br />
+        <a href="mailto:oselumeseagbonrofo@gmail.com">Send an email to me</a>
+      </p>
+    </footer>
+  </body>
 </html>

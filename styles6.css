@@ -1,0 +1,22 @@
+li {
+    background-color: black;
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    padding: 10px;
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+span{
+    font-size: 3em;
+    /* visibility: hidden; */
+    display: none;
+    /* diff btw visibility & display - 
+    visibility reserves space on page
+    WHILE display doesn't */
+}

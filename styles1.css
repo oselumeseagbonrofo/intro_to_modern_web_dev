@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap');
+
+div:hover{
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+body{
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
+.blue{
+    color: hsla(155, 40%, 50%, 0.5);
+    background-color: #ffff0080;
+}

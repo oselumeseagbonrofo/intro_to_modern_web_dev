@@ -1,0 +1,42 @@
+header {
+    outline-color: red;
+    outline-width: 2px;
+    outline-style: solid;
+    border: 5px solid green;
+    max-width: 900px;
+    margin: auto; /* makes it always centered no matter screen*/
+}
+
+ul{
+    z-index: -1;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(255, 192, 20, 0.5);
+    outline: solid 2px blue
+}
+
+article, aside{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+article{
+    background: rgba(0, 128, 0, 0.4);
+    z-index: 2;
+}
+
+aside{
+    background: white;
+    z-index: 3;
+}
+
+footer{
+    height: 20px;
+    width: 75%;
+    margin: auto;
+    background: seagreen;
+    overflow: auto;
+    margin-bottom: 30px;
+}

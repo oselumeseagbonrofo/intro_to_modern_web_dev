@@ -1,0 +1,21 @@
+/* Box model */
+div{
+    border-style: dotted;
+    border-width: 1em;
+    border-color: hsl(22, 44%, 33%);
+}
+
+h2{
+    border: solid 2px seagreen;
+    background-color: azure;
+    width: 400px;
+    height:15px;
+    overflow: auto;
+}
+
+.teal{
+    background-color: teal;
+    border: double 1px royalblue;
+    padding: 20px 40px 50px 30px;
+    margin: 40px 40px;
+}

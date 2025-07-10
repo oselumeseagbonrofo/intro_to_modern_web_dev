@@ -1,0 +1,33 @@
+header h1{ /* descendant combinator */
+    background-color: green;
+} /* Selector prevent multiple use of class */
+
+article span{
+    background-color: yellow;
+}
+
+article > span{ /* child combinator */
+    background-color: aquamarine;
+}
+
+article > p ~ span{ /* general sibling combinator */
+    background-color: rgb(229, 132, 15);
+} /* + means adjacent - all except the selected one */
+
+article > p + span{ /* adjacent sibling combinator */
+    background-color: blue;
+} /* + means adjacent - span immediately after it */
+
+li a[class="link"]{ /* using html attributes/ properties */
+    color: orangered;
+}
+
+
+li a[class="link"]{ /* using html attributes/ properties */
+    color: orangered;
+}
+
+img[src="techie.jpg"]{
+    max-width: 100%;
+    height: auto;
+}

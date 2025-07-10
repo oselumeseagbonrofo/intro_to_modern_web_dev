@@ -1,0 +1,25 @@
+header{
+    background-color: rgba(245, 245, 220, 0.4);
+    padding: 10px;
+    position: static;
+}
+
+header{
+    position:relative;
+}
+
+header{
+    position: fixed;
+}
+
+header{
+    position: absolute; /* Position closest to ancestor html element. default is body */
+    bottom: 100px;
+    right: 50px;
+    width: 200px;
+    height: 150px;
+}
+
+header{
+    position: sticky;
+}

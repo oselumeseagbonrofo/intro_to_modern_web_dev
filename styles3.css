@@ -1,0 +1,25 @@
+/* Style options for text */
+.teal{
+    border: solid 2px green;
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent: 30px;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    white-space: normal;
+}
+
+.smaller{
+    font-size: 0.6rem;
+    background-color: beige;
+    vertical-align: baseline;
+    text-decoration: underline;
+    /* line-height: 4; */
+}
+
+a{
+    text-decoration: none;
+    text-shadow: 3px 4px 5px pink; /* Last px value is for 
+    blur size (shadow size) for
+    producing blurring shadow effect */
+}

@@ -1,0 +1,19 @@
+/* pseudo-elements are used to style specific
+parts of the html element */
+header::first-letter{
+    font-size: 3em;
+    color: red;
+}
+
+article::first-line{
+    font-size: 2em;
+    color: orange;
+}
+
+article::before{
+    content: url(profileImg.jpeg);
+}
+
+article::after{
+    content: 'This was added by CSS';
+}

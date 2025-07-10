@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightskyblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  height: 20%;
+  width: 30%;
+  display: block;
+}
+
+.header,
+.footer {
+  background-color: aliceblue;
+  color: rgb(98, 0, 0);
+  text-align: center;
+  padding: 10px;
+}
+
+.col {
+  padding: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  display: block;
+  color: greenyellow;
+  text-align: center;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "cola colb colb colb colc";
+}
+
+.main aside:first-child {
+  grid-area: cola;
+  background-color: lightslategray;
+  padding: 20px;
+}
+
+.main article[class="color col left"] {
+  grid-area: colb;
+  background-color: lightgrey;
+}
+
+.main article:last-child {
+  grid-area: colc;
+  background-color: lightseagreen;
+}
+
+.footer {
+}
+
+@media (max-width: 640px) {
+  .main {
+    display: grid;
+    grid-template-areas:
+      "cola"
+      "colb"
+      "colc";
+  }
+
+  ul {
+    flex-direction: row;
+  }
+}
