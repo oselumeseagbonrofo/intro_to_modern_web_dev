@@ -70,6 +70,7 @@ a {
 }
 
 .footer {
+    background-color: aliceblue;
 }
 
 @media (max-width: 640px) {
