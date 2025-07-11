@@ -6,7 +6,7 @@ article span{
     background-color: yellow;
 }
 
-article > span{ /* child combinator */
+article > span{ /* child combinator - immediate child */
     background-color: aquamarine;
 }
 
