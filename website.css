@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:white;
+    padding: 0;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    color: #000000;
+}
+
+.footer::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: darkslategray;
+    color: white;
+}
+
+.second{
+    text-align: left;
+    width: 50%;
+}
+
+.col{
+    margin: auto;
+    width: 80%;
+}
+
+.first, .third{
+    width: 25%;
+}
+
+.footer > div{
+    float:left;
+    border: 1px solid #eee;
+}
+
+.flexHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexHeader .heading{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.menu{
+    display: none;
+    padding: 10px;
+}
+
+.menu:hover{
+    background-color: red;
+    color: antiquewhite;
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: auto;
+    /* display: flex;
+    justify-items: center;
+    align-items: center;*/
+} 
+
+header nav ul li{
+    display: inline-block;
+    background-color: antiquewhite;
+}
+
+header nav a{
+    text-decoration: none;
+    display: block;
+    padding: 0 5px;
+    color: blue;
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+}
+
+header nav a:hover{
+    color: antiquewhite;
+    background-color: blue;
+}
+
+.main img{
+    display: inline;
+    height: 50%;
+    width: 40%;
+    float: left;
+    max-width: 100%;
+
+}
+
+.main{
+    background-color: azure;
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+
+footer{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hidemenu{
+    display: block;
+}
+
+@media all and (max-width: 740px){
+    header nav ul li{
+        display: block;
+    }
+
+    .menu{
+        width: 100%;
+        background-color: antiquewhite;
+        color: blue;
+        display: block;
+        text-align: center;
+    }
+    .main img{
+        width: 100%;
+    }
+
+    .second{
+    text-align: center;
+    width: 100%;
+
+}
+
+.second ul{
+    list-style-type: none;
+}
+
+.col{
+    margin: auto;
+    width: 80%;
+}
+
+.first, .third{
+    width: 100%;
+}
+
+.hidemenu{
+    display: none;
+}
+
+}
