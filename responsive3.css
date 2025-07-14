@@ -8,8 +8,8 @@ body {
 }
 
 img {
-  height: 20%;
-  width: 30%;
+  height: 50%;
+  width: 50%;
   display: block;
 }
 
@@ -35,13 +35,26 @@ ul {
   align-items: center;
 }
 
-li a {
-  text-decoration: none;
+.menu {
   display: block;
+  color: greenyellow;
+}
+
+aside {
+  text-decoration: none;
+  display: inline;
   color: greenyellow;
   text-align: center;
   padding: 10px;
 }
+
+  .link {
+    text-decoration: none;
+    display: block;
+    color: greenyellow;
+    text-align: center;
+    padding: 10px;
+  }
 
 a {
   text-decoration: none;
@@ -51,6 +64,7 @@ a {
 .main {
   display: grid;
   grid-template-areas: "cola colb colb colb colc";
+  padding: 10px;
 }
 
 .main aside:first-child {
@@ -70,7 +84,8 @@ a {
 }
 
 .footer {
-    background-color: aliceblue;
+  background-color: aliceblue;
+  height: 100%;
 }
 
 @media (max-width: 640px) {
@@ -79,7 +94,15 @@ a {
     grid-template-areas:
       "cola"
       "colb"
+      "colb"
       "colc";
+  }
+  .link {
+    text-decoration: none;
+    display: none;
+    color: greenyellow;
+    text-align: center;
+    padding: 10px;
   }
 
   ul {
