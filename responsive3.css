@@ -3,8 +3,12 @@
 }
 
 body {
-  background-color: lightskyblue;
+  background-color: aliceblue;
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -23,6 +27,7 @@ img {
 
 .col {
   padding: 5px;
+  background-color: #ecf0f1;
 }
 
 ul {
@@ -36,25 +41,24 @@ ul {
 }
 
 .menu {
-  display: block;
-  color: greenyellow;
+  display: none;
 }
 
 aside {
   text-decoration: none;
   display: inline;
-  color: greenyellow;
+  color: black;
   text-align: center;
   padding: 10px;
 }
 
-  .link {
-    text-decoration: none;
-    display: block;
-    color: greenyellow;
-    text-align: center;
-    padding: 10px;
-  }
+.link {
+  text-decoration: none;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
 
 a {
   text-decoration: none;
@@ -63,24 +67,34 @@ a {
 
 .main {
   display: grid;
-  grid-template-areas: "cola colb colb colb colc";
-  padding: 10px;
+  grid-template-areas: "cola colb colc";
+  width: 100%;
 }
 
 .main aside:first-child {
   grid-area: cola;
-  background-color: lightslategray;
+  background-color:#ecf0f1;
+;
   padding: 20px;
 }
 
 .main article[class="color col left"] {
   grid-area: colb;
   background-color: lightgrey;
+  padding: 20px;
+  margin: auto;
+  width: 100%
 }
 
 .main article:last-child {
   grid-area: colc;
-  background-color: lightseagreen;
+  background-color: #ecf0f1;
+  padding: 20px;
+  width: 100%;
+}
+
+.hidemenu {
+  display: block;
 }
 
 .footer {
@@ -94,18 +108,21 @@ a {
     grid-template-areas:
       "cola"
       "colb"
-      "colb"
       "colc";
   }
   .link {
     text-decoration: none;
-    display: none;
-    color: greenyellow;
+    color: black;
     text-align: center;
     padding: 10px;
   }
+  .menu {
+    display: block;
+    color: black;
+    cursor: pointer;
+  }
 
-  ul {
-    flex-direction: row;
+  .hidemenu {
+    display: none;
   }
 }
